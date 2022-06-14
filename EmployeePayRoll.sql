@@ -52,3 +52,8 @@ select * from Employeetable
 
 alter table EmployeeTable
 add BasicPay int, Deduction int, TaxablePay int, IncomeTax int, NetPay int
+
+Insert into EmployeeTable (Name, BasicPay, StartDate, Gender)
+values('Terrisa', 4555, '2022-03-04', 'F')
+Update EmployeeTable set Department = 'Sales' where Name = 'Terrisa'
+Insert into EmployeeTable (Name, Department) values ('Terrisa', 'Marketing')
