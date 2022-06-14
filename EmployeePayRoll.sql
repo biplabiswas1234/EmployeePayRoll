@@ -35,3 +35,6 @@ select max(Salary) as MaxOfSalaryFemale from EmployeeTable where Gender = 'F' Gr
 select max(Salary) as MaxOfSalaryMale from EmployeeTable where Gender = 'M' Group by Gender;
 select count(Salary) as CountOfSalaryFemale from EmployeeTable where Gender = 'F' Group by Gender;
 select count(Salary) asCountOfSalaryMale from EmployeeTable where Gender = 'M' Group by Gender;
+
+alter table EmployeeTable 
+add Phone varchar(15), Department varchar(100) ;
