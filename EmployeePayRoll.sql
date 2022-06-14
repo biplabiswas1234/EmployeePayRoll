@@ -38,3 +38,17 @@ select count(Salary) asCountOfSalaryMale from EmployeeTable where Gender = 'M' G
 
 alter table EmployeeTable 
 add Phone varchar(15), Department varchar(100) ;
+
+update EmployeeTable set Department = 'Marketing';
+update EmployeeTable set Department = 'HR' where Name='Biplab';
+update EmployeeTable set Department = 'Manager' where Name  in ('Billu','Binita');
+update EmployeeTable set Phone = 954979057 where Name = 'Biplab';
+update EmployeeTable set Phone = 7002523967 where Name = 'Bipan';
+update EmployeeTable set Phone = 9658456325 where Name = 'Bikash';
+update EmployeeTable set Phone = 9568456213 where Name = 'Billu';
+update EmployeeTable set Phone = 9568456215 where Name = 'Binita';
+
+select * from Employeetable
+
+alter table EmployeeTable
+add BasicPay int, Deduction int, TaxablePay int, IncomeTax int, NetPay int
