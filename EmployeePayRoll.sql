@@ -8,9 +8,9 @@ Address varchar(10),
 Salary int,
 StartDate date
 )
-select * from Employeetable
+
 insert into EmployeeTable values('Biplab','Mumbai',3000,'10-06-2022');
 insert into EmployeeTable values('Bipan','Delhi',3500,'11-06-2022');
 insert into EmployeeTable values('Bikash','Mumbai',4000,'12-06-2022');
 insert into EmployeeTable values('Billu','Kolkata',4500,'06-13-2022');
-delete from EmployeeTable 
+select * from Employeetable
